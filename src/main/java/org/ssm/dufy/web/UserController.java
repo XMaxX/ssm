@@ -21,11 +21,6 @@ public class UserController {
 	@RequestMapping(value="/showname",method=RequestMethod.GET)
 	public String showUserName(@RequestParam("uid") int uid,HttpServletRequest request,Model model){
 		User user = userService.getUserById(uid);
-		try {
-			Thread.sleep(5000);
-		}catch (Exception e){
-
-		}
 		if(user != null){
 			request.setAttribute("name", user.getUserName());
 			model.addAttribute("mame", user.getUserName());
