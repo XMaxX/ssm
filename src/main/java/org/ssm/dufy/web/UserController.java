@@ -26,6 +26,7 @@ public class UserController {
 			model.addAttribute("mame", user.getUserName());
 			return "showName";
 		}
+		/*测试分支合并*/
 		request.setAttribute("error", "没有找到该用户！");
 		return "error";
 	}
