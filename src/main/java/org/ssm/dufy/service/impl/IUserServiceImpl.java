@@ -16,6 +16,7 @@ public class IUserServiceImpl  implements IUserService{
 	
 	@Override
 	public User getUserById(int id) {
+		/*测试分支合并*/
 		return udao.selectByPrimaryKey(id);
 	}
 }
